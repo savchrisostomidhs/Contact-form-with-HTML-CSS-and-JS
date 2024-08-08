@@ -1,0 +1,356 @@
+@font-face {
+    src: url(./assets/fonts/Karla-VariableFont_wght.ttf);
+    font-family: Karla;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+main {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: hsl(148, 38%, 91%);
+    font-family: Karla, sans-serif;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+html body main .form p:not(.not) {
+    color: hsl(0, 66%, 54%);
+}
+
+main .form {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    height: 773px;
+    padding: 40px;
+    width: 740px;
+}
+
+main .form>h1 {
+    color: hsl(187, 24%, 22%);
+}
+
+main .full-name {
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+main .full-name .fname,
+main .full-name .lname {
+    width: 100%;
+}
+
+main .full-name input,
+main .email input {
+    border-radius: 10px;
+    border: 1px solid hsl(187, 24%, 22%);
+    height: 50px;
+    margin-top: 10px;
+    outline: none;
+    padding: 20px;
+    width: 100%;
+}
+
+main .full-name p {
+    display: none;
+    margin-top: 16px;
+}
+
+/* Email */
+
+main .email {
+    margin-top: 30px;
+    width: 100%;
+}
+
+main .email p {
+    display: none;
+    margin-top: 16px;
+}
+
+/* Query */
+
+main .radio {
+    margin-top: 30px;
+}
+
+main .radio .options {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    width: 100%;
+}
+
+main .radio .options .general,
+main .radio .options .support {
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid hsl(187, 24%, 22%);
+    color: hsl(187, 24%, 22%);
+    display: flex;
+    font-size: 18px;
+    gap: 15px;
+    height: 50px;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 100%;
+}
+
+main .radio .radio-error {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Message */
+
+main .message {
+    margin-top: 30px;
+    width: 100%;
+}
+
+main .message textarea {
+    border-radius: 10px;
+    border: 1px solid hsl(187, 24%, 22%);
+    height: 105px;
+    margin-top: 16px;
+    padding: 20px;
+    resize: none;
+    width: 100%;
+}
+
+main .message p {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Checkbox */
+
+main .check {
+    margin-top: 38px;
+}
+
+main .check-flex {
+    display: flex;
+    gap: 20px;
+}
+
+main .check-flex label {
+    color: hsl(187, 24%, 22%);
+}
+
+main .check p {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Button */
+
+main button {
+    background-color: hsl(169, 82%, 27%);
+    border-radius: 10px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-family: Karla, sans-serif;
+    height: 50px;
+    margin-top: 38px;
+    width: 100%;
+}
+
+/* Message Sent */
+
+main .message-sent {
+    background-color: hsl(187, 24%, 22%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    height: 107px;
+    left: calc(50% - 225px);
+    padding: 22px 28px;
+    position: absolute;
+    top: -107px;
+    width: 450px;
+}
+
+main .message-animation {
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-name: message;
+}
+
+main .message-sent .text {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    gap: 10px;
+}
+
+main .message-sent>p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 15.5px;
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+}
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-height: 800px) {
+
+    html,
+    body,
+    main {
+        height: 105%;
+    }
+
+    main .form {
+        height: fit-content;
+        padding: 15px 20px;
+        width: 500px;
+    }
+
+    main .full-name {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    main .full-name input,
+    main .email input {
+        height: 40px;
+        padding: 10px;
+    }
+
+    main .full-name p {
+        margin-top: 10px;
+    }
+
+    main .email {
+        margin-top: 20px;
+    }
+
+    main .email p {
+        margin-top: 10px;
+    }
+
+    main .radio {
+        margin-top: 20px;
+    }
+
+    main .radio .options {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    main .radio .options .general,
+    main .radio .options .support {
+        gap: 10px;
+        height: 40px;
+        padding: 10px;
+    }
+
+    main .radio .radio-error {
+        margin-top: 10px;
+    }
+
+    main .message {
+        margin-top: 20px;
+    }
+
+    main .message textarea {
+        height: 80px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    main .message p {
+        margin-top: 10px;
+    }
+
+    main .check {
+        margin-top: 25px;
+    }
+
+    main .check-flex {
+        gap: 15px;
+    }
+
+    main .check p {
+        margin-top: 10px;
+    }
+
+    main button {
+        height: 40px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    html,
+    body,
+    main {
+        height: 1138px;
+    }
+
+    main .form {
+        height: 95%;
+        width: 90%;
+    }
+
+    main .full-name {
+        flex-direction: column;
+    }
+
+    main .options {
+        flex-direction: column;
+    }
+
+    main .message textarea {
+        height: 240px;
+    }
+
+    main .message-sent {
+        left: calc(50% - 150px);
+        width: 300px;
+    }
+
+    main .message-sent>p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+@keyframes message {
+    from {
+        top: -107px;
+    }
+
+    to {
+        top: 24px;
+    }
+}

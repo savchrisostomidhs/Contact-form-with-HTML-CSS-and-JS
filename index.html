@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Frontend Mentor | Contact form</title>
+</head>
+
+<body>
+  <main>
+    <div class="form">
+
+      <h1>Contact Us</h1>
+
+      <div class="full-name">
+        <div class="fname">
+          <label for="name">First Name *</label>
+          <input class="js-fname" type="text" id="name">
+          <p class="js-fname-error">This field is required</p>
+        </div>
+
+        <div class="lname">
+          <label for="lname">Last Name *</label>
+          <input class="js-lname" type="text" id="lname">
+          <p class="js-lname-error">This field is required</p>
+        </div>
+      </div>
+
+      <div class="email">
+        <label for="email">Email Address *</label>
+        <input class="js-email" type="text" id="email">
+        <p class="js-valid-error">Please enter a valid email address</p>
+        <p class="js-email-error">This field is required</p>
+      </div>
+
+      <div class="radio">
+        <p class="not">Query Type *</p>
+        <div class="options">
+          <div class="general">
+            <input class="js-radio" type="radio" value="General Enquiry" name="query" id="General">
+            <label for="General">General Enquiry</label>
+          </div>
+          <div class="support">
+            <input class="js-radio" type="radio" value="Support Request" name="query" id="Support">
+            <label for="Support">Support Request</label>
+          </div>
+        </div>
+        <p class="radio-error">Please select a query type</p>
+      </div>
+
+      <div class="message">
+        <label for="message">Message *</label>
+        <textarea class="js-textarea" name="message" id="message"></textarea>
+        <p class="js-message-error">This field is required</p>
+      </div>
+
+      <div class="check">
+        <div class="check-flex">
+          <input class="js-checkbox checkbox" type="checkbox" id="checkbox">
+          <label for="checkbox">I consent to being contacted by the team *</label>
+        </div>
+        <p class="js-check-error">To submit this form, please consent to being contacted</p>
+      </div>
+
+      <button class="js-button">Submit</button>
+
+      <div class="message-sent">
+        <div class="text">
+          <img src="./assets/images/icon-success-check.svg" alt="icon-success-check">
+          <p class="not">Message Sent!</p>
+        </div>
+        <p class="not">Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/savchrisostomidhs">savchrisostomidhs</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
